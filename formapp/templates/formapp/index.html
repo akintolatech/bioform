@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Form</title>
-    <link type="text/css" href="styles/style.css" rel="stylesheet" />
+    <link type="text/css" href="{% static 'styles/style.css' %}" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -12,11 +13,11 @@
 
             <div class="landing-container-wrap">
                 <div class="landing-img-box">
-                    <img src="img/akintolatech.jpeg" />
+                    <img src="{% static 'img/afms.png' %}" />
                 </div>
                 <h2>Strive to Excel</h2>
                 <p>Student Bio-Data Form Application</p>
-                <a href="pages/biodata.html"><button>Get Started</button></a>
+                <a href="{% url 'index:bio_data_form' %}"><button>Get Started</button></a>
             </div>
  
         </div>
